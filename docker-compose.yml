@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres-sql-airruppies
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Password
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: airruppies_application
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - airruppies-network
+    restart: unless-stopped
+  mail-dev:
+    container_name: airruppies-dev
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+    networks:
+      - airruppies-network
+    restart: unless-stopped
+
+networks:
+  airruppies-network:
+    driver: bridge
+
+volumes:
+  postgres:
+    driver: local
