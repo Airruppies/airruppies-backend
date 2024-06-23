@@ -40,10 +40,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build docker image
-        run: docker build -t airrupies/airruppies_application .
+        run: docker build -t airruppies/airruppies_application .
 
       - name: push docker image
-        run: docker push airrupies/airruppies_application
+        run: docker push airruppies/airruppies_application
 
 # puching to
 
