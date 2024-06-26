@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://dpg-cps9rp56l47c73e2cs8g-a.oregon-postgres.render.com:5432/airruppiesdb
-    username: airruppiesdb_user
-    password: Password
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -16,8 +16,8 @@ spring:
   mail:
     host: localhost
     port: 1025
-    username: airruppies
-    password: airruppies
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
