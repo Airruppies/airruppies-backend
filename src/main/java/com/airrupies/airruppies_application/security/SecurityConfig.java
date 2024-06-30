@@ -41,8 +41,7 @@ public class SecurityConfig {
                                         "/swagger-ui/**",
                                         "/webjars/**",
                                         "/swagger-ui.html",
-                                "https://airruppies-backend.onrender.com",
-                                "http://localhost:5173/**"
+                                "https://airruppies-frontend.vercel.app"
                                 )
                                 .permitAll()
                                 .anyRequest()
