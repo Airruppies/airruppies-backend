@@ -1,8 +1,9 @@
 spring:
   datasource:
-    url: postgresql://airruppiesdb_user:KsiPcedtMAMjrkaKPMSRf3fRIGpLBlvV@dpg-cps9rp56l47c73e2cs8g-a.oregon-postgres.render.com/airruppiesdb
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://dpg-cps9rp56l47c73e2cs8g-a.oregon-postgres.render.com/airruppiesdb
+
+    username: airruppiesdb_user
+    password: KsiPcedtMAMjrkaKPMSRf3fRIGpLBlvV
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
