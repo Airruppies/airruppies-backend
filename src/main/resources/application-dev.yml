@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: ${DB_URL}
+    url: postgresql://airruppiesdb_user:KsiPcedtMAMjrkaKPMSRf3fRIGpLBlvV@dpg-cps9rp56l47c73e2cs8g-a.oregon-postgres.render.com/airruppiesdb
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
